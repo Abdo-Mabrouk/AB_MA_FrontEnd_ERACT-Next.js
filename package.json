@@ -1,0 +1,37 @@
+{
+  "name": "3bdo-mabrouk-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdo-Mabrouk/3bdo-mabrouk-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdo-Mabrouk/3bdo-mabrouk-portfolio/issues"
+  },
+  "homepage": "https://github.com/Abdo-Mabrouk/3bdo-mabrouk-portfolio#readme",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.9",
+    "tailwindcss": "^4.2.2",
+    "vite": "^8.0.7"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "framer-motion": "^12.38.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-icons": "^5.6.0",
+    "react-router-dom": "^7.14.0"
+  }
+}
