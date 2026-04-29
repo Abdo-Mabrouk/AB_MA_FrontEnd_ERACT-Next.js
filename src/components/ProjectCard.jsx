@@ -4,9 +4,8 @@ import { BsFillPlayCircleFill } from "react-icons/bs";
 export default function ProjectCard({ project }) {
   return (
     <article className="group relative overflow-hidden rounded-2xl border border-cyan-900/30 bg-slate-900/70 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-950/50">
-      
       {/* Thumbnail / Hero */}
-      <div className="relative h-40 overflow-hidden bg-gradient-to-br from-cyan-800 to-sky-700">
+      <div className="relative h-40 overflow-hidden bg-linear-to-br from-cyan-800 to-sky-700">
         <img
           src={project.image}
           alt={project.title}
@@ -21,7 +20,9 @@ export default function ProjectCard({ project }) {
 
       {/* Body */}
       <div className="space-y-3 p-4">
-        <h3 className="text-base font-medium text-slate-100">{project.title}</h3>
+        <h3 className="text-base font-medium text-slate-100">
+          {project.title}
+        </h3>
         <p className="text-xs text-slate-400">{project.tools}</p>
 
         {/* Actions */}
@@ -38,7 +39,7 @@ export default function ProjectCard({ project }) {
             </a>
           )}
           {project.github && (
-                        <a
+            <a
               href={project.github}
               target="_blank"
               rel="noreferrer"

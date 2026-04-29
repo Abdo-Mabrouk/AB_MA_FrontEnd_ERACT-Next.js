@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import logo from '@/assets/imgs/logo.jpg'
 
 const DESKTOP_LINKS = [
   { id: "home", label: "Home", hash: "#home" },
@@ -87,7 +88,7 @@ export default function HomeNavbar() {
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             <motion.img
-              src="/assets/imgs/logo.jpg"
+              src={logo}
               alt="Logo"
               className="h-10 w-auto max-h-10 rounded-lg object-cover sm:h-11 sm:max-h-11"
               animate={
@@ -111,7 +112,7 @@ export default function HomeNavbar() {
                     e.preventDefault();
                     handleNavClick(hash);
                   }}
-                  className="relative isolate rounded-xl px-4 py-2.5 text-sm font-semibold outline-none [transform-style:preserve-3d]"
+                  className="relative isolate rounded-xl px-4 py-2.5 text-sm font-semibold outline-none transform-3d"
                   style={{ transformStyle: "preserve-3d" }}
                   initial="rest"
                   whileHover="hover"
@@ -127,11 +128,11 @@ export default function HomeNavbar() {
                       boxShadow: "0 0 0 0 rgba(34, 211, 238, 0)",
                     },
                     hover: {
-                      rotateX: -10,
-                      rotateY: 5 * tilt,
-                      rotateZ: -8 * tilt,
-                      y: -10,
-                      z: 10,
+                      rotateX: 0,
+                      rotateY: 0 * tilt,
+                      rotateZ: 0 * tilt,
+                      y: 0,         // ← التعديل: كان -10
+                      z: 0,
                       scale: 1.12,
                       boxShadow:
                         "0 28px 56px rgba(34, 211, 238, 0.45), 0 0 40px rgba(34, 211, 238, 0.15), inset 0 1px 0 rgba(255,255,255,0.22)",
@@ -150,11 +151,11 @@ export default function HomeNavbar() {
                         transition: { type: "spring", stiffness: 380, damping: 18 },
                       },
                     }}
-                    className="pointer-events-none absolute inset-0 -z-10 rounded-xl border border-cyan-400/35 bg-gradient-to-br from-cyan-400/30 via-cyan-500/10 to-slate-900/60 backdrop-blur-md"
+                    className="pointer-events-none absolute inset-0 -z-10 rounded-xl border border-cyan-400/35 bg-linear-to-br from-cyan-400/30 via-cyan-500/10 to-slate-900/60 backdrop-blur-md"
                     style={{ transform: "translateZ(-4px)", transformStyle: "preserve-3d" }}
                   />
                   <span
-                    className={`relative z-10 block transition-colors duration-200 [transform:translateZ(18px)] [text-shadow:0_2px_14px_rgba(0,0,0,0.55)] ${
+                    className={`relative z-10 block transition-colors duration-200 transform-[translateZ(18px)] [text-shadow:0_2px_14px_rgba(0,0,0,0.55)] ${
                       active ? "text-cyan-100" : "text-slate-300"
                     }`}
                   >
@@ -170,7 +171,7 @@ export default function HomeNavbar() {
                         transition: { type: "spring", stiffness: 420, damping: 26 },
                       },
                     }}
-                    className="absolute bottom-1 left-3 right-3 z-10 h-[3px] origin-center rounded-full bg-gradient-to-r from-transparent via-cyan-300 to-transparent [transform:translateZ(12px)] shadow-[0_0_12px_rgba(34,211,238,0.8)]"
+                    className="absolute bottom-1 left-3 right-3 z-10 h-0.75 origin-center rounded-full bg-linear-to-r from-transparent via-cyan-300 to-transparent transform-[translateZ(12px)] shadow-[0_0_12px_rgba(34,211,238,0.8)]"
                   />
                 </motion.a>
               );
@@ -255,7 +256,7 @@ export default function HomeNavbar() {
                             e.preventDefault();
                             handleNavClick(hash);
                           }}
-                          className={`relative block rounded-xl px-4 py-3 text-base font-semibold [transform-style:preserve-3d] ${
+                          className={`relative block rounded-xl px-4 py-3 text-base font-semibold transform-3d ${
                             active
                               ? "bg-cyan-400/15 text-cyan-200 ring-1 ring-cyan-400/50"
                               : "bg-slate-800/30 text-slate-200"
@@ -273,7 +274,7 @@ export default function HomeNavbar() {
                           whileTap={{ scale: 0.97, z: 8 }}
                           transition={{ type: "spring", stiffness: 280, damping: 16 }}
                         >
-                          <span className="relative z-10 block [transform:translateZ(12px)]">{label}</span>
+                          <span className="relative z-10 block transform-[translateZ(12px)]">{label}</span>
                         </motion.a>
                       </motion.li>
                     );
