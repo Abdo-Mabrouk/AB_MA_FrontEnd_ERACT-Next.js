@@ -55,15 +55,15 @@ export default function HomeHeroSection() {
           </motion.p>
 
           <motion.h1
-            className="text-4xl font-black md:text-6xl"
+            className="text-4xl font-black md:text-6xl capitalize"
             whileHover={{ rotateX: -10, rotateY: 12, scale: 1.02 }}
             transition={{ type: "spring", stiffness: 180, damping: 14 }}
           >
-            Abd-El-R7man Mabrouk
+            Abdalrhman Mabrouk
           </motion.h1>
 
           <motion.p
-            className="mx-auto mt-5 max-w-2xl text-slate-300"
+            className="mx-auto mt-5 max-w-2xl text-slate-300 capitalize"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -120,7 +120,7 @@ export default function HomeHeroSection() {
             <motion.a
               target="_blank"
               rel="noreferrer"
-              href="https://www.facebook.com/share/15NA4DF5SJ/"
+              href="https://www.facebook.com/share/18czVdFsio/"
               className="rounded-full bg-slate-800 p-3 hover:bg-cyan-400 hover:text-black"
               initial={{ opacity: 0, y: 15, rotateX: -25 }}
               animate={{ opacity: 1, y: 0, rotateX: 0 }}
