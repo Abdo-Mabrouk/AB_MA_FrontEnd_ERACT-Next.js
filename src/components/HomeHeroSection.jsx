@@ -94,7 +94,7 @@ export default function HomeHeroSection() {
             <motion.a
               href="https://drive.google.com/file/d/1IT2CD_h5OyNVIElnJqZcAlQQ-br6cX5b/view?usp=drive_link"
               target="_blank"
-              download={"abdo-mabrouk-frontEnd(REACT AND NEXT)"}
+              download="abdo-mabrouk-frontEnd(REACT AND NEXT)"
               rel="noreferrer"
               className="rounded-lg border border-cyan-300 px-5 py-2 font-semibold text-cyan-200"
               whileHover={{
@@ -120,28 +120,7 @@ export default function HomeHeroSection() {
             <motion.a
               target="_blank"
               rel="noreferrer"
-              href="https://www.facebook.com/share/18czVdFsio/"
-              className="rounded-full bg-slate-800 p-3 hover:bg-cyan-400 hover:text-black"
-              initial={{ opacity: 0, y: 15, rotateX: -25 }}
-              animate={{ opacity: 1, y: 0, rotateX: 0 }}
-              transition={{ duration: 0.5, delay: 0.65 }}
-              whileHover={{
-                y: -10,
-                rotateX: 0,
-                rotateY: 0,
-                rotateZ: 6,
-                scale: 1.12,
-                boxShadow: "0 18px 30px rgba(34, 211, 238, 0.35)",
-                transition: { type: "spring", stiffness: 80, damping: 4 },
-              }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <FaFacebookF />
-            </motion.a>
-            <motion.a
-              target="_blank"
-              rel="noreferrer"
-              href="https://wa.me/201551459152"
+              href="https://wa.me/+201122737895"
               className="rounded-full bg-slate-800 p-3 hover:bg-cyan-400 hover:text-black"
               initial={{ opacity: 0, y: 15, rotateX: -25 }}
               animate={{ opacity: 1, y: 0, rotateX: 0 }}

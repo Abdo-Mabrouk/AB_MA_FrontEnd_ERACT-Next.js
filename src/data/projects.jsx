@@ -13,8 +13,23 @@ import travilifa from "@/assets/imgs/2.png";
 import devfolio from "@/assets/imgs/3.png";
 import daniels from "@/assets/imgs/4.png";
 import productManagement from "@/assets/imgs/6.png";
+import athar from "@/assets/imgs/Athar.jfif";
+import jothour from "@/assets/imgs/7lol.jpg";
 
 export const featuredProjects = [
+  {
+    title: "Athar Landing Page",
+    tools: "React, TypeScript, Tailwind CSS, GSAP, i18next",
+    image: athar,
+    url: "https://athar-landing-page.vercel.app/",
+    github: "https://github.com/Abdo-Mabrouk/AtharLandingPage",
+  },
+  {
+    title: "Jothour & Hloul — Admin Dashboard",
+    tools: "Sole Front-End Developer | React, TypeScript, Tailwind CSS, React Query, Axios",
+    image: jothour,
+    url: "https://admin-jothour-hloul.doctor-code.net/about",
+  },
   {
     title: "Sun Pyramids",
     tools: "React / yup / formik / Tailwind Css",
@@ -22,13 +37,7 @@ export const featuredProjects = [
     url: "https://tourism-app-dusky.vercel.app/",
     github: "https://github.com/Abdo-Mabrouk/Tourism-App.git",
   },
-  {
-    title: "Fresh Cart",
-    tools: "React",
-    image: freshCart,
-    url: "https://frsh-cart-aipq.vercel.app/",
-    github: "https://github.com/Abdo-Mabrouk/FrshCart.git",
-  },
+
   {
     title: "Storage Field",
     tools: "React and Next.js",
@@ -50,16 +59,10 @@ export const featuredProjects = [
     url: "https://social-app-zjsx.vercel.app/",
     github: "https://github.com/Abdo-Mabrouk/mnasty_react-and-next.git",
   },
-  {
-    title: "Management Task",
-    tools: "HTML/CSS/JS",
-    image: managementTask,
-    url: "https://abdo-mabrouk.github.io/management-Task",
-    github: "https://github.com/Abdo-Mabrouk/management-Task",
-  },
 ];
 
 export const allProjects = [
+  ...featuredProjects,
   {
     title: "Bookmarker",
     tools: "HTML/CSS/JS",
